@@ -1,0 +1,135 @@
+body {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(72deg, rgba(68, 124, 226, 0.85) 10% , rgba(22, 248, 194, 0.85) 99%);
+    flex-direction: column;
+}
+.center {
+    
+    justify-content: center;
+    display: flex;
+}
+
+.title {
+    display: flex; 
+    justify-content: center; 
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 50px;
+    color: #f58ec8;;
+    text-shadow: 1px 1px 2px black;
+    -webkit-text-stroke: 0.05px black
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+}
+
+.navigation-auto {
+    position: relative;
+    display: flex;
+    height: 20px;
+    margin-left: 282px;
+    margin-top: 460px;
+    width: 236px;
+}
+
+.manual-navegation-selection {
+    position: relative;
+    display: flex;
+    height: 20px;
+    margin-left: -236px;
+    margin-right: -518px;
+    margin-top: 460px;
+    width: 236px;
+}
+
+.navigation-auto div {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    width: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+input {
+    display: none;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 20px;
+    border-radius: 20px;
+    cursor: pointer;   
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: #fff;
+    transition: 0.4s;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 800px;
+    height: 500px;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #f58ec8;
+    display: flex;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #f58ec8;
+    display: flex;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #f58ec8;
+    display: flex;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #f58ec8;
+    display: flex;
+}
+
